@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ELOC - Elephant Locator | Wildlife Conservation Through Sound</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#home">
+                <i class="fas fa-volume-up me-2"></i>ELOC
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#features">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#specifications">Specifications</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#research">For Researchers</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#getting-started">Get Started</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="hero-overlay">
+            <div class="container">
+                <div class="row align-items-center min-vh-100">
+                    <div class="col-lg-6">
+                        <h1 class="display-3 fw-bold text-white mb-4">
+                            ELOC - Developing the Future of Wildlife Conservation
+                        </h1>
+                        <p class="lead text-white mb-4">
+                            Revolutionary solar-powered bioacoustic monitoring device in development for real-time elephant detection using AI-powered sound recognition. Join us in creating the next generation of wildlife conservation technology.
+                        </p>
+                        <div class="hero-buttons">
+                            <a href="#about" class="btn btn-light btn-lg me-3">Learn More</a>
+                            <a href="#getting-started" class="btn btn-outline-light btn-lg">Get Started</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <img src="https://images.unsplash.com/photo-1564760055775-d63b17a55c44?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                             alt="Elephant in natural habitat" class="img-fluid rounded shadow-lg">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h2 class="display-5 fw-bold text-primary mb-4">Revolutionizing Wildlife Conservation</h2>
+                    <p class="lead mb-4">
+                        The ELOC (Elephant Locator) is an open-source, low-cost, solar-powered bioacoustic monitoring device specifically designed for elephant detection and wildlife conservation.
+                    </p>
+                    <p class="mb-4">
+                        With its built-in ESP32 chip and advanced machine learning capabilities, ELOC offers enough processing power to run complex ML models for real-time sound recognition. The device continuously monitors the environment for elephant vocalizations and alerts conservationists when elephants are detected.
+                    </p>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="d-flex align-items-center mb-3">
+                                <i class="fas fa-solar-panel text-warning fs-4 me-3"></i>
+                                <span class="fw-semibold">Solar Powered</span>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="d-flex align-items-center mb-3">
+                                <i class="fas fa-brain text-info fs-4 me-3"></i>
+                                <span class="fw-semibold">AI Detection</span>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="d-flex align-items-center mb-3">
+                                <i class="fas fa-code-branch text-success fs-4 me-3"></i>
+                                <span class="fw-semibold">Open Source</span>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="d-flex align-items-center mb-3">
+                                <i class="fas fa-shield-alt text-primary fs-4 me-3"></i>
+                                <span class="fw-semibold">Weather Resistant</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <img src="https://images.unsplash.com/photo-1551969014-7d2c4cddf0b6?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                         alt="Elephant family in savanna" class="img-fluid rounded shadow">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mission Statement -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h3 class="display-6 fw-bold text-primary mb-4">Our Mission</h3>
+                    <p class="lead mb-4">
+                        "Good bye disposable batteries" - Unlike existing recorders that dispose of more than 40 batteries per device every year, ELOC's solar-powered design eliminates battery waste while providing unlimited recording time.
+                    </p>
+                    <p class="fs-5 text-muted">
+                        <strong>Open Source Software + Open Source Hardware + DIY Motivation = Low Cost Open Source Device</strong>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center mb-5">
+                    <h2 class="display-5 fw-bold text-primary mb-4">Key Features</h2>
+                    <p class="lead">Advanced technology designed specifically for wildlife conservation and acoustic monitoring</p>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100 shadow-sm border-0">
+                        <div class="card-body text-center p-4">
+                            <div class="feature-icon mb-3">
+                                <i class="fas fa-solar-panel text-warning fs-1"></i>
+                            </div>
+                            <h5 class="card-title fw-bold">Solar Powered</h5>
+                            <p class="card-text">
+                                Unlimited recording time with solar panel and rechargeable batteries. No more disposable battery waste - environmentally friendly and cost-effective.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100 shadow-sm border-0">
+                        <div class="card-body text-center p-4">
+                            <div class="feature-icon mb-3">
+                                <i class="fas fa-brain text-info fs-1"></i>
+                            </div>
+                            <h5 class="card-title fw-bold">AI-Powered Detection</h5>
+                            <p class="card-text">
+                                Real-time elephant sound recognition using machine learning models running on ESP32 chip. Continuous monitoring with instant alerts.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100 shadow-sm border-0">
+                        <div class="card-body text-center p-4">
+                            <div class="feature-icon mb-3">
+                                <i class="fas fa-microphone text-primary fs-1"></i>
+                            </div>
+                            <h5 class="card-title fw-bold">Full-Spectrum Audio</h5>
+                            <p class="card-text">
+                                Records audio frequencies from 10 Hz to 22 kHz with sample rates up to 44kHz. Perfect for capturing elephant rumbles and other wildlife sounds.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100 shadow-sm border-0">
+                        <div class="card-body text-center p-4">
+                            <div class="feature-icon mb-3">
+                                <i class="fas fa-mobile-alt text-success fs-1"></i>
+                            </div>
+                            <h5 class="card-title fw-bold">Mobile App Control</h5>
+                            <p class="card-text">
+                                Configure and control via Bluetooth with the ELOC Control Panel Android app. No PC required for field setup and configuration.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100 shadow-sm border-0">
+                        <div class="card-body text-center p-4">
+                            <div class="feature-icon mb-3">
+                                <i class="fas fa-code-branch text-secondary fs-1"></i>
+                            </div>
+                            <h5 class="card-title fw-bold">Open Source</h5>
+                            <p class="card-text">
+                                Built on open-source principles with available hardware designs and software. Encourages collaboration and community customization.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100 shadow-sm border-0">
+                        <div class="card-body text-center p-4">
+                            <div class="feature-icon mb-3">
+                                <i class="fas fa-shield-alt text-danger fs-1"></i>
+                            </div>
+                            <h5 class="card-title fw-bold">Weather Resistant</h5>
+                            <p class="card-text">
+                                IP66 rated enclosure designed for harsh environmental conditions. Reliable operation in diverse wildlife habitats.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technical Specifications -->
+    <section id="specifications" class="py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center mb-5">
+                    <h2 class="display-5 fw-bold text-primary mb-4">Technical Specifications</h2>
+                    <p class="lead">Advanced hardware optimized for bioacoustic monitoring and wildlife research</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="card shadow-sm border-0 mb-4">
+                        <div class="card-header bg-primary text-white">
+                            <h5 class="mb-0"><i class="fas fa-microchip me-2"></i>Processing & Memory</h5>
+                        </div>
+                        <div class="card-body">
+                            <ul class="list-unstyled mb-0">
+                                <li><strong>Processor:</strong> ESP32-WROVER-E, Dual-core Xtensa LX6, 240MHz</li>
+                                <li><strong>Memory:</strong> 520KB SRAM + 8MB PSRAM</li>
+                                <li><strong>Flash:</strong> 16MB SPI Flash</li>
+                                <li><strong>Storage:</strong> MicroSD (up to 2TB, FAT32)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="card shadow-sm border-0 mb-4">
+                        <div class="card-header bg-success text-white">
+                            <h5 class="mb-0"><i class="fas fa-volume-up me-2"></i>Audio Capabilities</h5>
+                        </div>
+                        <div class="card-body">
+                            <ul class="list-unstyled mb-0">
+                                <li><strong>Digital Mic:</strong> ICS-43434, 24-bit ADC</li>
+                                <li><strong>SNR:</strong> 65dBA, -26dBFS sensitivity</li>
+                                <li><strong>Frequency Range:</strong> 10Hz - 22kHz</li>
+                                <li><strong>Sample Rates:</strong> 8, 16, 24, 32, 44kHz</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="card shadow-sm border-0 mb-4">
+                        <div class="card-header bg-warning text-dark">
+                            <h5 class="mb-0"><i class="fas fa-battery-three-quarters me-2"></i>Power System</h5>
+                        </div>
+                        <div class="card-body">
+                            <ul class="list-unstyled mb-0">
+                                <li><strong>Input:</strong> Solar (4-18V) / USB-C</li>
+                                <li><strong>Battery:</strong> Li-Ion (3.7V) or LiFePo4 (3.2V)</li>
+                                <li><strong>Charger:</strong> BM2517M - max 800mA</li>
+                                <li><strong>Runtime:</strong> >30 days @16kHz recording</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="card shadow-sm border-0 mb-4">
+                        <div class="card-header bg-info text-white">
+                            <h5 class="mb-0"><i class="fas fa-cogs me-2"></i>Additional Features</h5>
+                        </div>
+                        <div class="card-body">
+                            <ul class="list-unstyled mb-0">
+                                <li><strong>Sensors:</strong> LIS3DH Accelerometer, Temperature</li>
+                                <li><strong>Connectivity:</strong> Bluetooth, Wi-Fi</li>
+                                <li><strong>Expansion:</strong> LoRa, GPS, GSM modules</li>
+                                <li><strong>Interface:</strong> I2C, I2S, SPI, UART</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Power Consumption -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <h3 class="text-center fw-bold text-primary mb-4">Power Consumption</h3>
+                    <div class="table-responsive">
+                        <table class="table table-striped table-hover">
+                            <thead class="table-primary">
+                                <tr>
+                                    <th>Mode</th>
+                                    <th>16kHz Sample Rate</th>
+                                    <th>44kHz Sample Rate</th>
+                                    <th>Description</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><strong>Recording</strong></td>
+                                    <td>17-21mA</td>
+                                    <td>35-39mA</td>
+                                    <td>Continuous audio recording to SD card</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Detecting</strong></td>
+                                    <td>23-25mA</td>
+                                    <td>34mA</td>
+                                    <td>AI-powered sound detection mode</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Trigger Mode</strong></td>
+                                    <td>&lt;2mA</td>
+                                    <td>&lt;2mA</td>
+                                    <td>Low-power standby, wakes on detection</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row mt-5">
+                <div class="col-lg-8 mx-auto">
+                    <div class="card text-white" style="background-color: #f39c12;">
+                        <div class="card-body text-center p-4">
+                            <h5 class="card-title fw-bold mb-3">Battery Life Expectations</h5>
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <h6 class="fw-bold">With 6Ah Battery</h6>
+                                    <p class="mb-0">12 days continuous recording<br><small>(without solar panel)</small></p>
+                                </div>
+                                <div class="col-md-4">
+                                    <h6 class="fw-bold">With Solar Panel</h6>
+                                    <p class="mb-0">Unlimited recording time<br><small>(even in partial shade)</small></p>
+                                </div>
+                                <div class="col-md-4">
+                                    <h6 class="fw-bold">Trigger Mode</h6>
+                                    <p class="mb-0">Months of operation<br><small>(&lt;2mA consumption)</small></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- For Researchers Section -->
+    <section id="research" class="py-5 bg-light">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <img src="https://images.unsplash.com/photo-1549366021-9f761d040a94?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                         alt="Elephant research in the field" class="img-fluid rounded shadow">
+                </div>
+                <div class="col-lg-6">
+                    <h2 class="display-5 fw-bold text-primary mb-4">For Wildlife Researchers</h2>
+                    <p class="lead mb-4">
+                        ELOC has been tested and deployed in real-world conservation scenarios across multiple continents, providing valuable data for wildlife research and conservation efforts.
+                    </p>
+                    
+                    <div class="row mb-4">
+                        <div class="col-md-6">
+                            <div class="research-stat text-center p-3">
+                                <h3 class="text-primary fw-bold">50+</h3>
+                                <p class="mb-0">ELOC 2 Devices Deployed</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="research-stat text-center p-3">
+                                <h3 class="text-primary fw-bold">80+</h3>
+                                <p class="mb-0">ELOC 3.3 Devices Deployed</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h5 class="fw-bold mb-3">Deployment Locations:</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><i class="fas fa-map-marker-alt text-primary me-2"></i><strong>Sumatra:</strong> Primary testing and data collection</li>
+                        <li class="mb-2"><i class="fas fa-map-marker-alt text-primary me-2"></i><strong>Malaysia:</strong> Rainforest monitoring programs</li>
+                        <li class="mb-2"><i class="fas fa-map-marker-alt text-primary me-2"></i><strong>Sri Lanka:</strong> Human-elephant conflict mitigation</li>
+                    </ul>
+
+                    <h5 class="fw-bold mb-3">Research Applications:</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i>Elephant behavior monitoring</li>
+                        <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i>Human-wildlife conflict prevention</li>
+                        <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i>Population tracking and census</li>
+                        <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i>Habitat usage patterns</li>
+                        <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i>Training data collection for AI models</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Getting Started Section -->
+    <section id="getting-started" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center mb-5">
+                    <h2 class="display-5 fw-bold text-primary mb-4">Getting Started</h2>
+                    <p class="lead">Simple setup process to get your ELOC device recording in the field</p>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <div class="card h-100 shadow-sm border-0">
+                        <div class="card-body text-center p-4">
+                            <div class="step-number bg-primary text-white rounded-circle d-inline-flex align-items-center justify-content-center mb-3" style="width: 60px; height: 60px;">
+                                <span class="fs-4 fw-bold">1</span>
+                            </div>
+                            <h5 class="card-title fw-bold">What You Need</h5>
+                            <ul class="list-unstyled text-start">
+                                <li><i class="fas fa-check text-success me-2"></i>ELOC 3 device</li>
+                                <li><i class="fas fa-check text-success me-2"></i>MicroSD card (FAT32, up to 2TB)</li>
+                                <li><i class="fas fa-check text-success me-2"></i>Li-Ion or LiFePo4 battery</li>
+                                <li><i class="fas fa-check text-success me-2"></i>Solar panel (4-18V)</li>
+                                <li><i class="fas fa-check text-success me-2"></i>Android phone with ELOC app</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 mb-4">
+                    <div class="card h-100 shadow-sm border-0">
+                        <div class="card-body text-center p-4">
+                            <div class="step-number bg-primary text-white rounded-circle d-inline-flex align-items-center justify-content-center mb-3" style="width: 60px; height: 60px;">
+                                <span class="fs-4 fw-bold">2</span>
+                            </div>
+                            <h5 class="card-title fw-bold">Setup Process</h5>
+                            <ol class="list-unstyled text-start">
+                                <li class="mb-2">1. Connect battery to ELOC</li>
+                                <li class="mb-2">2. Install ELOC Control Panel app</li>
+                                <li class="mb-2">3. Turn ELOC ON (wait for blue LED)</li>
+                                <li class="mb-2">4. Connect via Bluetooth in app</li>
+                                <li class="mb-2">5. Configure settings and start recording</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 mb-4">
+                    <div class="card h-100 shadow-sm border-0">
+                        <div class="card-body text-center p-4">
+                            <div class="step-number bg-primary text-white rounded-circle d-inline-flex align-items-center justify-content-center mb-3" style="width: 60px; height: 60px;">
+                                <span class="fs-4 fw-bold">3</span>
+                            </div>
+                            <h5 class="card-title fw-bold">Deployment</h5>
+                            <ul class="list-unstyled text-start">
+                                <li><i class="fas fa-sun text-warning me-2"></i>Position solar panel for optimal light</li>
+                                <li><i class="fas fa-tree text-success me-2"></i>Mount securely in target habitat</li>
+                                <li><i class="fas fa-signal text-info me-2"></i>Ensure good GPS/cellular coverage</li>
+                                <li><i class="fas fa-shield-alt text-primary me-2"></i>Weather-resistant installation</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Open Source Community -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h2 class="display-5 fw-bold text-primary mb-4">Open Source Community</h2>
+                    <p class="lead mb-4">
+                        ELOC is built on open-source principles, encouraging collaboration, customization, and community support for wildlife conservation technology.
+                    </p>
+                    
+                    <div class="row mb-4">
+                        <div class="col-md-6">
+                            <div class="d-flex align-items-center mb-3">
+                                <i class="fab fa-github fs-3 text-dark me-3"></i>
+                                <div>
+                                    <h6 class="mb-0 fw-bold">GitHub Repository</h6>
+                                    <small class="text-muted">Hardware & Software</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="d-flex align-items-center mb-3">
+                                <i class="fas fa-book fs-3 text-info me-3"></i>
+                                <div>
+                                    <h6 class="mb-0 fw-bold">Documentation</h6>
+                                    <small class="text-muted">Complete guides</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="d-grid gap-2 d-md-flex">
+                        <a href="https://github.com/LIFsCode/ELOC-3.0" class="btn btn-dark btn-lg" target="_blank">
+                            <i class="fab fa-github me-2"></i>View on GitHub
+                        </a>
+                        <a href="https://play.google.com/store/apps/details?id=de.eloc.eloc_control_panel_2" class="btn btn-success btn-lg" target="_blank">
+                            <i class="fab fa-android me-2"></i>Download App
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <img src="https://images.unsplash.com/photo-1516321497487-e288fb19713f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                         alt="Elephants in community setting" class="img-fluid rounded shadow">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h2 class="display-5 fw-bold text-primary mb-4">Get Involved</h2>
+                    <p class="lead mb-5">
+                        Join the global community of researchers and conservationists using ELOC technology to protect wildlife.
+                    </p>
+                    
+                    <div class="row">
+                        <div class="col-md-4 mb-4">
+                            <div class="contact-item text-center">
+                                <i class="fas fa-globe fs-1 text-primary mb-3"></i>
+                                <h5 class="fw-bold">Website</h5>
+                                <a href="https://wildlifebug.com" class="text-decoration-none">wildlifebug.com</a>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-4">
+                            <div class="contact-item text-center">
+                                <i class="fab fa-github fs-1 text-dark mb-3"></i>
+                                <h5 class="fw-bold">GitHub</h5>
+                                <a href="https://github.com/LIFsCode/ELOC-3.0" class="text-decoration-none">LIFsCode/ELOC-3.0</a>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-4">
+                            <div class="contact-item text-center">
+                                <i class="fab fa-android fs-1 text-success mb-3"></i>
+                                <h5 class="fw-bold">Mobile App</h5>
+                                <a href="https://play.google.com/store/apps/details?id=de.eloc.eloc_control_panel_2" class="text-decoration-none">ELOC Control Panel</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <h5 class="fw-bold mb-3">
+                        <i class="fas fa-volume-up me-2"></i>ELOC
+                    </h5>
+                    <p class="mb-3">
+                        Empowering wildlife conservation through innovative acoustic monitoring technology. 
+                        Open-source, solar-powered, and designed for researchers worldwide.
+                    </p>
+                    <div class="social-links">
+                        <a href="https://github.com/LIFsCode/ELOC-3.0" class="text-white me-3" target="_blank">
+                            <i class="fab fa-github fs-4"></i>
+                        </a>
+                        <a href="https://wildlifebug.com" class="text-white me-3" target="_blank">
+                            <i class="fas fa-globe fs-4"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h6 class="fw-bold mb-3">Product</h6>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#features" class="text-white-50 text-decoration-none">Features</a></li>
+                        <li class="mb-2"><a href="#specifications" class="text-white-50 text-decoration-none">Specifications</a></li>
+                        <li class="mb-2"><a href="#getting-started" class="text-white-50 text-decoration-none">Getting Started</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h6 class="fw-bold mb-3">Research</h6>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#research" class="text-white-50 text-decoration-none">For Researchers</a></li>
+                        <li class="mb-2"><a href="https://github.com/LIFsCode/ELOC-3.0" class="text-white-50 text-decoration-none" target="_blank">Documentation</a></li>
+                        <li class="mb-2"><a href="https://play.google.com/store/apps/details?id=de.eloc.eloc_control_panel_2" class="text-white-50 text-decoration-none" target="_blank">Mobile App</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h6 class="fw-bold mb-3">Community</h6>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="https://github.com/LIFsCode/ELOC-3.0" class="text-white-50 text-decoration-none" target="_blank">GitHub</a></li>
+                        <li class="mb-2"><a href="https://wildlifebug.com" class="text-white-50 text-decoration-none" target="_blank">Wildlife Bug</a></li>
+                        <li class="mb-2"><a href="#contact" class="text-white-50 text-decoration-none">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h6 class="fw-bold mb-3">Conservation</h6>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><span class="text-white-50">Elephant Protection</span></li>
+                        <li class="mb-2"><span class="text-white-50">Acoustic Monitoring</span></li>
+                        <li class="mb-2"><span class="text-white-50">Wildlife Research</span></li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p class="mb-0 text-white-50">
+                        &copy; 2025 ELOC Project. Open Source under MIT License.
+                    </p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <p class="mb-0 text-white-50">
+                        Built for wildlife conservation 🐘
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>
