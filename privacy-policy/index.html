@@ -75,12 +75,9 @@
     </style>
     <script>
         function decodeEmail(encoded) {
-            var email = '';
-            var key = encoded.substr(0, 2);
-            for (var i = 2; i < encoded.length; i += 2) {
-                email += String.fromCharCode(parseInt(encoded.substr(i, 2), 16) ^ parseInt(key, 16));
-            }
-            return email;
+            return encoded.split('').reverse().join('').replace(/[a-zA-Z]/g, function(c) {
+                return String.fromCharCode((c <= "Z" ? 90 : 122) >= (c = c.charCodeAt(0) + 13) ? c : c - 26);
+            });
         }
         
         function showEmail(element, encoded) {
@@ -135,7 +132,7 @@
 
         <h2>Data Retention and Deletion</h2>
         <ul>
-            <li>You may request deletion of your personal data or support correspondence at any time by contacting us at <a href="#" class="email-protected" data-email="0f6a60797b7a6e797b6e60656c6a706e6e7b7a2a6f7d68">contact email</a>.</li>
+            <li>You may request deletion of your personal data or support correspondence at any time by contacting us at <a href="#" class="email-protected" data-email="tro.fgunarycrynavfv@qr">contact email</a>.</li>
             <li>Data stored on your device or uploaded to ELOC devices can be removed by using the provided App controls.</li>
         </ul>
 
@@ -154,7 +151,7 @@
         <div class="contact-info">
             <h2>Contact</h2>
             <p>If you have any questions or requests regarding your data, please contact:</p>
-            <p><strong>Email:</strong> <a href="#" class="email-protected" data-email="0f6a60797b7a6e797b6e60656c6a706e6e7b7a2a6f7d68">contact email</a></p>
+            <p><strong>Email:</strong> <a href="#" class="email-protected" data-email="tro.fgunarycrynavfv@qr">contact email</a></p>
         </div>
     </div>
 </body>
