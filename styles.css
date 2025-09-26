@@ -44,7 +44,6 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
     color: var(--text-dark);
-    padding-top: 76px; /* Account for fixed navbar height */
 }
 
 /* Smooth scrolling */
